@@ -1,0 +1,16 @@
+.ui-loading-block {
+  &.top {
+    .ui-loading-cnt {
+      margin-top: -200px;
+    }
+  }
+
+  .ui-loading-cnt {
+    width: 57px;
+    height: 57px;
+  }
+
+  .ui-loading-bright {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "root": true,
+    "extends": "standard",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+    },
+    "env": {
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+        "semi": 1,
+        "no-unused-vars": 1
+    }
+}

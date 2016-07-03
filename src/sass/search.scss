@@ -1,0 +1,68 @@
+.ui-searchbar-wrap {
+  button {
+    margin-right: 0;
+  }
+}
+
+.ui-searchbar {
+  margin-right: 0px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.ui-searchbar-cancel {
+  margin-right: 2px;
+}
+
+.hotwords {
+  padding: 10px 0px;
+
+  h4 {
+    padding-left: 10px;
+  }
+
+  .hot-search {
+    background: #fff;
+    margin-top: 10px;
+    padding: 0 10px 10px 0;
+
+    .ui-label {
+      font-size: 14px;
+      margin: 10px 0 0 10px;
+    }
+  }
+}
+
+.suggest {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  padding-top: 45px;
+  width: 100%;
+
+  .ui-list {
+    li {
+      padding-right: 10px;
+      transition: all .4s ease;
+      overflow: hidden;
+      height: 40px;
+      padding: 0px;
+      line-height: 40px;
+      display: block;
+      a {
+        display: inline-block;
+        width: 100%;
+        color: #777;
+      }
+    }
+    .staggered-enter, .staggered-leave {
+      opacity: 0;
+      height: 0;
+    }
+
+    .staggered-leave {
+      transition-duration: 0s;
+    }
+  }
+}

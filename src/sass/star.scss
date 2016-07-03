@@ -1,0 +1,47 @@
+.star {
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  width: 100px;
+
+  &.large {
+    transform: scale(1.2);
+    transform-origin: left center;
+    .score {      
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+
+  .gray, .ligh {
+    position: absolute;
+    top: -13px;
+    left: -8px;
+    width: 100px;
+    overflow: hidden;
+  }
+
+  .gray {
+    .ui-icon-star {
+      color: #ccc;
+    }
+  }
+
+  .ligh {
+    .ui-icon-star {
+      color: #f3e319;
+    }
+  }
+
+  .ui-icon-star {
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+  }
+
+  .score {
+    padding-left: 100px;
+    font-size: 14px;
+    color: #777;
+  }
+}
