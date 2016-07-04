@@ -101,7 +101,15 @@ class App extends React.Component {
     }
   }
   componentDidMount () {
-    this.getData()
+    // 如果sessionStorage中已经存储了数据，则直接从sessionStorage中获取
+    if (sessionStorage.resData) {
+      this.setState({
+        resData: JSON.parse(sessionStorage.resData),
+        loading: false
+      })
+    } else {
+      this.getData()
+    }
   }
   getData () {
     // 正在热映、即将上映、Top250
