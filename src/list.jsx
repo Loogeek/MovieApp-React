@@ -72,15 +72,14 @@ class List extends React.Component {
   }
   componentDidMount () {
     let type = this.props.params.type
-    let movieLists = JSON.parse(sessionStorage[`MovieApp_${type}`])
     if (sessionStorage[`MovieApp_${type}`]) {
+      let movieLists = JSON.parse(sessionStorage[`MovieApp_${type}`])
       this.setState({
         movieLists: movieLists,
         loading: false
       })
       // 如果数据都请求完毕并保存在movieLists数组中，则取消加载动画并提示加载完成
       // 如果数据加载完则停止发送请求
-      console.log(this.state.total, movieLists.length)
       if (this.state.total <= movieLists.length) {
         this.setState({
           more: false
@@ -102,13 +101,11 @@ class List extends React.Component {
   getMoviesData () {
     fetchJsonp(`http://api.douban.com/v2/movie/${this.props.params.type}?count=10&start=${(this.state.page - 1) * 10}`).then((response) => response.json()).then((json) => {
       if (this.state.page === 1) {
-        console.log(json.total)
         this.setState({
           title: json.title.split('-')[0],
           total: json.total,
           loading: false
         })
-        console.log(1, this.state.total)
       }
       // 返回的数据不为空
       if (json && json.subjects.length) {
