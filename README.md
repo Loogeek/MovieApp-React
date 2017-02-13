@@ -15,7 +15,7 @@
 
 效果展示
 ----
-<a href="http://loogeek.github.io/MovieApp-Vue" target="\_blank">使用Chrome游览器开发者工具手机模式查看效果</a>
+<a href="http://loogeek.github.io/MovieApp-React" target="\_blank">使用Chrome游览器开发者工具手机模式查看效果</a>
 
 项目整体效果
 -------
